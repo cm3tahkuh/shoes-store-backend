@@ -4,7 +4,8 @@
   "info": {
     "singularName": "products",
     "pluralName": "products-plural",
-    "displayName": "Products"
+    "displayName": "Products",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -31,6 +32,12 @@
     },
     "material": {
       "type": "string"
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection.collection",
+      "inversedBy": "products"
     }
   }
 }
